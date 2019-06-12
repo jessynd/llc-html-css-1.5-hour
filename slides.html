@@ -58,26 +58,11 @@
         <span>Introduction to<br>HTML & CSS</span>
       </h1>
 
-      <!-- FILL IN INSTRUCTOR DETAILS -->
-      <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
-      <h2><span class="cursive">with</span> Instructor name</h2>
-      <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="http://website.com">website.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul>
-
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
         <p class="left">Content created by </a> <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
         <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
       </footer>
-    </section>
-
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        #Introductions & Icebreaker
-      </script>
     </section>
 
     <section class="slide title" data-markdown data-toc>
@@ -245,13 +230,13 @@
 
         <ul>
           <li>Open up your browser</li>
-          <li>Go to thimble.mozilla.org</li>
+          <li>Go to <a href="">Glitch</a></li>
+          <li> Sign in using gmail or facebook.</li>
+          <li>Click on new project and choose hello-webpage</li>
         </ul>
-        Sign in:
-        <ul>
-          <li><strong>Username:</strong> ladieslearningcode</li>
-          <li><strong>Password:</strong> cupcakes&code</li>
-        </ul>
+       
+        
+       
       </script>
     </section>
 
@@ -263,21 +248,33 @@
 
         ```
         <!DOCTYPE html>
-          <html>
+        <html lang="en">
           <head>
-              <meta charset="utf-8">
-                <title>Made with Thimble</title>
-              <link rel="stylesheet" href="style.css">
-            </head>
+            <title>Hello!</title>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 
+            <!-- import the webpage's stylesheet -->
+            <link rel="stylesheet" href="/style.css">
+
+            <!-- import the webpage's javascript file -->
+            <script src="/script.js" defer></script>
+          </head>  
           <body>
-            <!-- page content here (this is an HTML comment by the way) -->
-            <h1>Welcome to Thimble</h1>
+            <h1>Hi there!</h1>
 
-            <p>Make something <strong>amazing</strong> with the web!</p>
+            <p>
+              I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
+            </p>
 
+            <!-- include the Glitch button to show what the webpage is about and
+                  to make it easier for folks to view source and remix -->
+            <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+            <script src="https://button.glitch.me/button.js"></script>
           </body>
-          </html>
+        </html>
+
         ```
         (We'll be going through what these tags mean very soon.)<!-- .element: class="note" -->
 
@@ -758,33 +755,15 @@ border-radius: 5px;
 
     <section class="slide small-type" data-markdown>
       <script type="text/template">
-      #Getting your website online
-
-      Make sure you're logged in to [thimble.mozilla.org](http://thimble.mozilla.org)
+      #Getting your website online [Glitch](http://glitch.com)
 
 
-      Click `Publish` and you will get a sharable link to your project that you can share on social media or with friends and family!
+      Click `Share` and you will get a Live App link to your project that you can share on social media or with friends and family!
 
       Keep practicing! Visit [eraseallkittens.com](http://eraseallkittens.com) to keep practicing your new HTML & CSS skills
 
       </script>
     </section>
-
-
-  <!-- Last slide -->
-    <section class="slide last">
-      <h1>Thank you!</h1>
-      <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
-      <h2><span class="cursive">with</span> Instructor Name</h2>
-      <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="#">mywebsite.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul>
-
-      <p class="attribution">Slide presentation originally created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>. Special thanks to all contributors to the slides: <a href="https://github.com/mattb0m)">mattb0m</a>, <a href="https://github.com/zoster">zoster</a>, <a href="https://github.com/hrtovey">hrtovey</a>, <a href="https://github.com/jessynd">jessynd</a>, <a href="https://github.com/melissacrnic">melissacrnic</a> and <a href="http://pixelles.ca/blog/2015/01/workshop-twine">Rebecca Cohen Palacios</a></p>
-    </section>
-
   </main><!-- cls main section -->
 
   <script src="framework/scripts/jquery-1.11.0.min.js"></script>
